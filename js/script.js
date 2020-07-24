@@ -1,30 +1,19 @@
-// let number = 5;
+const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
 
+const personalMovieDB = {
+	count: numberOfFilms,
+	movies: {},
+	actors: {},
+	genres: [],
+	privat: true
+};
 
-// number = 10;
-// console.log(number);
+const a = prompt('Один из последних просмотренных фильмов?', ''),
+	  b = prompt('На сколько оцените его?', ''),
+	  c = prompt('Один из последних просмотренных фильмов?', ''),
+	  d = prompt('На сколько оцените его?', '');
+	 
+	personalMovieDB.movies[a] = b;
+	personalMovieDB.movies[c] = d;
 
-
-
-
-
-// const obj = {
-// 	oila: "uylangan",
-// 	ismi: "palonchi",
-// 	tugilgan: 1987
-
-// };
- 
-
-// console.log(obj.oila);
-
-// const answer = prompt("Вам есть 18?", "90");
-// console.log(answer);
-
-
-const answers = [];
-
-answers[0] = prompt('Как ваше имя?', '');
-answers[1] = prompt('Как ваша фамилия?', '');
-answers[2] = prompt('Сколька вам лет?', '');
-
+	console.log(personalMovieDB);
