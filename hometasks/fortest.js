@@ -24,3 +24,13 @@
 // console.log(salo);
 
 
+function sayHi(name) {
+	var phrase = "Привет, " + name;
+	console.log(phrase);
+  }
+  
+  sayHi('Aziz');
+
+const str = "Aziz";
+
+console.log(str.toUpperCase());
